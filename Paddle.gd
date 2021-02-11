@@ -16,7 +16,7 @@ func _physics_process(delta):
 		global_position.x = get_global_mouse_position().x
 	
 	if Input.is_mouse_button_pressed(BUTTON_LEFT):
-		motion.y -= gravity
+		motion.y -= gravity * 2
 	else:
 		motion.y += gravity
 
