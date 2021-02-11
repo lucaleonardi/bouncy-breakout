@@ -19,12 +19,6 @@ func _physics_process(delta):
 		motion.y -= gravity
 	else:
 		motion.y += gravity
-	
-	for i in get_slide_count():
-		var _collision = get_slide_collision(i)
-		if _collision.collider.name == "Ball":
-			var _distance_from_center = global_position.distance_to(_collision.global_position)
-			
 
 
 #	motion.x = clamp(motion.x + xaxis * speed, -max_speed, max_speed)

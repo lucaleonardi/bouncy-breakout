@@ -7,7 +7,9 @@
 radius = 5.0
 height = 66.0
 
-[node name="Paddle" type="KinematicBody2D"]
+[node name="Paddle" type="KinematicBody2D" groups=[
+"paddle",
+]]
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
